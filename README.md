@@ -3,7 +3,6 @@
 **Part II: Software Implementation, Automated XFOIL Coupling, and Validation**
 
 César Carlos Ventura
-Departamento de Física, UNS - Av. Alem 1253, (8000) Bahía Blanca, Argentina
 📧 cesarventura.phys@gmail.com
 
 ---
