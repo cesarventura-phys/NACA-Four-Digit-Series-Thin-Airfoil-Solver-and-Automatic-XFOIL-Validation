@@ -159,7 +159,7 @@ Validation was performed for the cambered **NACA 2412** (m = 0.02, p = 0.4, t = 
 
 `generate_polar.py` sweeps α from −5° to 15° in 1° increments and overlays the thin-airfoil result with the automatically generated XFOIL polar.
 
-![NACA 2412 polar comparison: thin-airfoil theory vs. XFOIL](results/polar_comparison_2412.png)
+![NACA 2412 polar comparison: thin-airfoil theory vs. XFOIL](polar_comparison_2412.png)
 
 Since thin-airfoil theory predicts a lift-curve slope of exactly 2π/rad independent of camber, the thin-airfoil polar is a straight line whose only camber-dependent feature is the zero-lift angle offset. XFOIL's panel-method result shows a similarly linear trend but with a slightly higher slope and higher C_l at every α — expected, since XFOIL retains true airfoil thickness, which increases the effective camber and local leading-edge curvature seen by the flow.
 
@@ -167,7 +167,7 @@ Since thin-airfoil theory predicts a lift-curve slope of exactly 2π/rad indepen
 
 `generate_loading.py` evaluates ΔC_p(x/c) on a fine θ-grid, masks a small region near the leading/trailing edges, and compares it against ΔC_p obtained from XFOIL's surface-pressure file (upper/lower C_p(x) interpolated separately and subtracted).
 
-![NACA 2412 chordwise loading comparison at alpha = 5 degrees: thin-airfoil theory vs. XFOIL](results/2412_loading_comparison_alpha5.png)
+![NACA 2412 chordwise loading comparison at alpha = 5 degrees: thin-airfoil theory vs. XFOIL](2412_loading_comparison_alpha5.png)
 
 The thin-airfoil loading correctly reproduces the qualitative shape of the XFOIL distribution — a large peak near the leading edge decaying smoothly toward the trailing edge — while systematically underpredicting the magnitude, with the largest discrepancy near the leading edge.
 
